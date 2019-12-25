@@ -310,7 +310,7 @@ class _GraduateState extends State<Graduate> {
                     Container(
                       padding: EdgeInsets.all(10.0),
                       height: 50.0,
-                      width: 370.0,
+                      width: 380.0,
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8.0),
