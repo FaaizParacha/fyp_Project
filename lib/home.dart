@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:fyp/underGraduate.dart';
 
@@ -67,62 +67,65 @@ class _selectCategoryState extends State<selectCategory> {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-             Container(
-               padding: EdgeInsets.all(10.0),
-               width: 350.0,
-               height: 50.0,
-               decoration: BoxDecoration(
-                   color: Colors.white,
-                   borderRadius: BorderRadius.circular(8.0),
-                   border: Border.all(color: Colors.black)
-               ),
-               child: DropdownButtonHideUnderline(
-                 child: DropdownButton<String>(
-                   iconSize: 30.0,
-                         style: TextStyle(
-                          
-                         ),
-                  hint: Text("Select Catrgory",style: TextStyle(
-                      color: Colors.black87
-                  ),),
-                  items: <String>['Under Graduate', 'Post Graduate'].map((String value) {
-                    return new DropdownMenuItem<String>(
-                      value: value,
-                      child: new Text(value),
-                    );
-                  }).toList(),
-                  onChanged: (_) {},
-            ),
-               ),
-             ),
-            SizedBox(
-              height: 15.0,
-            ),
-            SizedBox(
-              width: 350.0,
-              height: 50.0,
-              child: FlatButton(
-                onPressed: () {Navigator.of(context).push(
-                    MaterialPageRoute(
-                        builder: (BuildContext context) => undergraduate()
-                    )
-                );},
-                child: Text(
-                  "Apply Now",
-                  style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.red.shade600,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(9.0)),
+      body:  Center(
+          child: Column(
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(
+                height: 200.0,
               ),
-            ),
-          ],
-        ),
+               Container(
+                 padding: EdgeInsets.all(10.0),
+                 width: 350.0,
+                 height: 50.0,
+                 decoration: BoxDecoration(
+                     color: Colors.white,
+                     borderRadius: BorderRadius.circular(8.0),
+                     border: Border.all(color: Colors.black)
+                 ),
+                 child: DropdownButtonHideUnderline(
+                   child: DropdownButton<String>(
+                     iconSize: 30.0,
+
+                    hint: Text("Select Catrgory",style: TextStyle(
+                        color: Colors.black87
+                    ),),
+                    items: <String>['Under Graduate', 'Post Graduate'].map((String value) {
+                      return new DropdownMenuItem<String>(
+                        value: value,
+                        child: new Text(value),
+                      );
+                    }).toList(),
+                    onChanged: (_) {},
+              ),
+                 ),
+               ),
+              SizedBox(
+                height: 15.0,
+              ),
+              SizedBox(
+                width: 350.0,
+                height: 50.0,
+                child: FlatButton(
+                  onPressed: () {Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => undergraduate()
+                      )
+                  );},
+                  child: Text(
+                    "Apply Now",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  color: Colors.red.shade600,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(9.0)),
+                ),
+              ),
+            Padding(padding: EdgeInsets.only(top: 130.0)),
+              Image(image: AssetImage("images/design.png"))
+            ],
+          ),
       ),
     );
   }

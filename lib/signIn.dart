@@ -128,7 +128,7 @@ class _secondsignInState extends State<secondsignIn> {
                         ),
                         Text("Remember me",style: TextStyle(color: Colors.red.shade600),),
                         SizedBox(
-                          width: 70.0,
+                          width: 50.0,
                         ),
                         Text(
                           "Forgot password",
@@ -143,7 +143,7 @@ class _secondsignInState extends State<secondsignIn> {
                       height: 10.0,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 280.0),
+                      padding: EdgeInsets.only(left: 200.0),
                       child: FloatingActionButton(
                         onPressed: () {Navigator.of(context).push(
                             MaterialPageRoute(

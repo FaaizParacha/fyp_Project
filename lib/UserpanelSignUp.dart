@@ -138,7 +138,7 @@ class _secondSignupState extends State<secondSignup> {
                   height: 10.0,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 280.0),
+                  padding: EdgeInsets.only(left: 200.0),
                   child: FloatingActionButton(
                     onPressed: () {},
                     child: Icon(
