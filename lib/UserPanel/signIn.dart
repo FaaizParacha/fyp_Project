@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'package:fyp/UserpanelSignUp.dart';
+import 'package:fyp/UserPanel/UserpanelSignUp.dart';
 
 class signIn extends StatefulWidget {
   @override
@@ -128,7 +128,7 @@ class _secondsignInState extends State<secondsignIn> {
                         ),
                         Text("Remember me",style: TextStyle(color: Colors.red.shade600),),
                         SizedBox(
-                          width: 50.0,
+                          width: 30.0,
                         ),
                         Text(
                           "Forgot password",

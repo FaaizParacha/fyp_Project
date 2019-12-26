@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fyp/Graduate.dart';
+import 'package:fyp/UserPanel/Graduate.dart';
 
 class undergraduate extends StatefulWidget {
   @override
@@ -30,7 +30,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -68,7 +68,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8.0),
@@ -95,7 +95,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -122,7 +122,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -149,7 +149,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -176,7 +176,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -203,7 +203,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -230,7 +230,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -257,7 +257,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -284,7 +284,7 @@ class _undergraduateState extends State<undergraduate> {
                       Container(
                         padding: EdgeInsets.all(10.0),
                         height: 50.0,
-                        width: 380.0,
+                        width: 330.0,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8.0),
@@ -309,7 +309,7 @@ class _undergraduateState extends State<undergraduate> {
                         height: 16.0,
                       ),
                       SizedBox(
-                        width: 350.0,
+                        width: 330.0,
                         height: 50.0,
                         child: FlatButton(
                           onPressed: () {Navigator.of(context).push(

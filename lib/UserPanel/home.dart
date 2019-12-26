@@ -1,6 +1,8 @@
-
 import 'package:flutter/material.dart';
-import 'package:fyp/underGraduate.dart';
+import 'package:fyp/UserPanel/Shortlisting.dart';
+import 'package:fyp/UserPanel/informationForm.dart';
+import 'package:fyp/UserPanel/notification.dart';
+import 'package:fyp/UserPanel/underGraduate.dart';
 
 class theme extends StatefulWidget {
   @override
@@ -49,15 +51,30 @@ class _selectCategoryState extends State<selectCategory> {
             ListTile(
               title: Text("Merit List"),
               leading: Icon(Icons.view_list),
+              onTap: () {Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => Shortlisting()
+                  )
+              );},
             ),
             ListTile(
               title: Text("Notifications"),
               leading: Icon(Icons.notifications),
+              onTap: () {Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => notify()
+                  )
+              );},
 
             ),
             ListTile(
               title: Text("information form"),
               leading: Icon(Icons.view_list),
+              onTap: () {Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => InfoForm()
+                  )
+              );},
             ),
             Divider(height: 20.0,),
             ListTile(
@@ -77,7 +94,7 @@ class _selectCategoryState extends State<selectCategory> {
               ),
                Container(
                  padding: EdgeInsets.all(10.0),
-                 width: 350.0,
+                 width: 330.0,
                  height: 50.0,
                  decoration: BoxDecoration(
                      color: Colors.white,
@@ -105,7 +122,7 @@ class _selectCategoryState extends State<selectCategory> {
                 height: 15.0,
               ),
               SizedBox(
-                width: 350.0,
+                width: 330.0,
                 height: 50.0,
                 child: FlatButton(
                   onPressed: () {Navigator.of(context).push(

@@ -7,15 +7,17 @@ class Shortlisting extends StatefulWidget {
 }
 
 class _ShortlistingState extends State<Shortlisting> {
-  List<String> items = List<String>.generate(30,(i)=>"Selected Candidate ${i+1}");
+  List<String> items = List<String>.generate(30,(i)=>"${i+1}:    Selected Candidate ");
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Shortlisted Candidates"),
-        backgroundColor: Colors.red.shade600,
-      ),
-      body: ListView.builder(
+    return Scaffold(appBar: AppBar(
+      title: Text("Shortlisted Candidates"),
+      backgroundColor: Colors.red.shade600,
+    ),
+      body:ListView.separated(
+          separatorBuilder: (context, index) => Divider(
+            color: Colors.black,
+          ),
           itemCount: items.length,
           itemBuilder: (context,int index){
             return Dismissible(
@@ -30,6 +32,7 @@ class _ShortlistingState extends State<Shortlisting> {
                 child: ListTile(
                   title: Text("${items[index]}"),
                 )
+
             );
           }
       ),
