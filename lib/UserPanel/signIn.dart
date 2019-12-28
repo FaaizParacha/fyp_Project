@@ -45,8 +45,7 @@ class _signInState extends State<signIn> {
               SizedBox(
                 height: 150.0,
               ),
-              Material(
-                child: Row(
+              Row(
                   children: <Widget>[
                     SizedBox(
                       width: 30.0,
@@ -60,7 +59,7 @@ class _signInState extends State<signIn> {
                     ),
                   ],
                 ),
-              ),
+
               secondsignIn()
             ],
           ),
@@ -96,26 +95,39 @@ class _secondsignInState extends State<secondsignIn> {
                         TextStyle(color: Colors.black87, fontSize: 20.0))),
                 child: Column(
                   children: <Widget>[
-
-                    TextFormField(
-                      // autofocus: true,
-                      cursorColor: Colors.black87,
-                      decoration: InputDecoration(
-                          suffixIcon: Icon(
-                            Icons.email,
-                            color: Colors.red.shade600,
-                          ),
-                          labelText: "Email"),
-                      keyboardType: TextInputType.emailAddress,
+                    SizedBox(
+                      height: 6.0,
                     ),
                     TextFormField(
-                      cursorColor: Colors.black87,
-                      decoration: InputDecoration(
-                          suffixIcon: Icon(
-                            Icons.remove_red_eye,
-                            color: Colors.red.shade600,
+                      decoration:  InputDecoration(
+                        labelText: "Email",
+                        fillColor: Colors.white,
+                        border:  OutlineInputBorder(
+                          borderRadius:  BorderRadius.circular(8.0),
+                          borderSide:  BorderSide(
                           ),
-                          labelText: "Password"),
+                        ),
+                        suffixIcon: Icon(Icons.email,color: Colors.red.shade600),
+                        //fillColor: Colors.green
+                      ),
+                      keyboardType: TextInputType.emailAddress,
+
+                    ),
+                    SizedBox(
+                      height: 6.0,
+                    ),
+                    TextFormField(
+                      decoration:  InputDecoration(
+                        labelText: "Password",
+                        fillColor: Colors.white,
+                        border:  OutlineInputBorder(
+                          borderRadius:  BorderRadius.circular(8.0),
+                          borderSide:  BorderSide(
+                          ),
+                        ),
+                        suffixIcon: Icon(Icons.lock,color: Colors.red.shade600),
+                        //fillColor: Colors.green
+                      ),
                       keyboardType: TextInputType.text,
                       obscureText: true,
                     ),
@@ -128,7 +140,7 @@ class _secondsignInState extends State<secondsignIn> {
                         ),
                         Text("Remember me",style: TextStyle(color: Colors.red.shade600),),
                         SizedBox(
-                          width: 30.0,
+                          width: 35.0,
                         ),
                         Text(
                           "Forgot password",
@@ -143,7 +155,7 @@ class _secondsignInState extends State<secondsignIn> {
                       height: 10.0,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 200.0),
+                      padding: EdgeInsets.only(left: 220.0),
                       child: FloatingActionButton(
                         onPressed: () {Navigator.of(context).push(
                             MaterialPageRoute(

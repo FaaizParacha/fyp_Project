@@ -38,25 +38,26 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
         ),
 
       ),
-    );
-  }
-}
-class personalInfo extends StatefulWidget {
-  @override
-  _personalInfoState createState() => _personalInfoState();
-}
-
-class _personalInfoState extends State<personalInfo> {
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      child: Column(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text("Program",style: TextStyle(
-            color: Colors.black
-          ),)
+              color: Colors.black
+          ),),
+       TextFormField(
+        decoration:  InputDecoration(
+          fillColor: Colors.white,
+          border:  OutlineInputBorder(
+            borderRadius:  BorderRadius.circular(8.0),
+            borderSide:  BorderSide(
+            ),
+          ),
+          //fillColor: Colors.green
+        ),
+      )
         ],
       ),
     );
   }
 }
+

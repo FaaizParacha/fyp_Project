@@ -40,16 +40,15 @@ class _UserPanelSignInState extends State<UserPanelSignup> {
             ),
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+           // mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 150.0,
+                height: 120.0,
               ),
-              Material(
-                child: Row(
+               Row(
                   children: <Widget>[
                     SizedBox(
-                      width: 30.0,
+                      width: 35.0,
                     ),
                     Text(
                       "Sign up",
@@ -58,9 +57,10 @@ class _UserPanelSignInState extends State<UserPanelSignup> {
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold),
                     ),
+
                   ],
                 ),
-              ),
+
               secondSignup()
             ],
           ),
@@ -90,47 +90,75 @@ class _secondSignupState extends State<secondSignup> {
                         TextStyle(color: Colors.black87, fontSize: 20.0))),
             child: Column(
               children: <Widget>[
-                TextFormField(
-                  // autofocus: true,
-                  cursorColor: Colors.black87,
-                  decoration: InputDecoration(
-                      suffixIcon: Icon(
-                        Icons.person,
-                        color: Colors.red.shade600,
-                      ),
-                      labelText: "Full Name"),
-                  keyboardType: TextInputType.emailAddress,
+                SizedBox(
+                  height: 6.0,
                 ),
                 TextFormField(
-                  // autofocus: true,
-                  cursorColor: Colors.black87,
-                  decoration: InputDecoration(
-                      suffixIcon: Icon(
-                        Icons.email,
-                        color: Colors.red.shade600,
+                  decoration:  InputDecoration(
+                    labelText: "Full Name",
+                    fillColor: Colors.white,
+                    border:  OutlineInputBorder(
+                      borderRadius:  BorderRadius.circular(8.0),
+                      borderSide:  BorderSide(
+
                       ),
-                      labelText: "Enter your email"),
-                  keyboardType: TextInputType.emailAddress,
+                    ),
+                    suffixIcon: Icon(Icons.person,color: Colors.red.shade600),
+                  ),
+                  keyboardType: TextInputType.text,
+                  autofocus: false,
+                ),
+                SizedBox(
+                  height: 6.0,
                 ),
                 TextFormField(
-                  cursorColor: Colors.black87,
-                  decoration: InputDecoration(
-                      suffixIcon: Icon(
-                        Icons.remove_red_eye,
-                        color: Colors.red.shade600,
+                  decoration:  InputDecoration(
+                    labelText: "Email",
+                    fillColor: Colors.white,
+                    border:  OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide:  BorderSide(
                       ),
-                      labelText: "Password"),
+                    ),
+                    suffixIcon: Icon(Icons.email,color: Colors.red.shade600),
+                    //fillColor: Colors.green
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                ),
+                SizedBox(
+                  height: 6.0,
+                ),
+                TextFormField(
+                  decoration:  InputDecoration(
+                    labelText: "Password",
+                    fillColor: Colors.white,
+                    border:  OutlineInputBorder(
+                      borderRadius:  BorderRadius.circular(8.0),
+                      borderSide:  BorderSide(
+                      ),
+                    ),
+                    suffixIcon: Icon(Icons.lock,color: Colors.red.shade600),
+                    //fillColor: Colors.green
+                  ),
+
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
+                SizedBox(
+                  height: 6.0,
+                ),
                 TextFormField(
-                  cursorColor: Colors.black87,
-                  decoration: InputDecoration(
-                      suffixIcon: Icon(
-                        Icons.remove_red_eye,
-                        color: Colors.red.shade600,
+                  decoration:  InputDecoration(
+                    labelText: "Confirm Password",
+                    fillColor: Colors.white,
+                    border:  OutlineInputBorder(
+                      borderRadius:  BorderRadius.circular(8.0),
+                      borderSide:  BorderSide(
                       ),
-                      labelText: "Confirm Password"),
+                    ),
+                    suffixIcon: Icon(Icons.lock,color: Colors.red.shade600),
+                    //fillColor: Colors.green
+                  ),
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
@@ -138,7 +166,7 @@ class _secondSignupState extends State<secondSignup> {
                   height: 10.0,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 200.0),
+                  padding: EdgeInsets.only(left: 220.0),
                   child: FloatingActionButton(
                     onPressed: () {},
                     child: Icon(
@@ -178,11 +206,11 @@ class _secondSignupState extends State<secondSignup> {
                     ),
                     color: Colors.grey.shade200,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(9.0)),
+                        borderRadius: BorderRadius.circular(8.0)),
                   ),
                 ),
                 SizedBox(
-                  height: 80.0,
+                  height: 110.0,
                 ),
                 Row(
                   children: <Widget>[
