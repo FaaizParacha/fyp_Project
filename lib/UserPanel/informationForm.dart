@@ -70,7 +70,7 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
+
                           ),
                         ),
                         SizedBox(
@@ -90,7 +90,7 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
+
                           ),
                         ),
                         SizedBox(
@@ -110,7 +110,7 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
+
                           ),
                         ),
                         SizedBox(
@@ -130,7 +130,7 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
+
                           ),
                         ),
                         SizedBox(
@@ -150,7 +150,7 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
+
                           ),
                         ),
                         SizedBox(
@@ -170,7 +170,6 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                               borderSide:  BorderSide(
                               ),
                             ),
-//fillColor: Colors.green
                           ),
                         ),
                         SizedBox(
@@ -200,23 +199,277 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
               )
           ),
           Scaffold(
-            body: Container(
-                padding: EdgeInsets.all(10.0),
-                child: Container(
-                  width: 170.0,
-                  height: 50.0,
-                  color: Colors.red.shade600,
-                  child: TextField(
-                      decoration:  InputDecoration(
-                        hintText : "SSC/Equivalent",
-                        hintStyle: TextStyle(color: Colors.white),
-                        border:  OutlineInputBorder(
-                          borderRadius:  BorderRadius.circular(8.0),
+            body: Scrollbar(
+                child: ListView(
+                  children: <Widget>[
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Container(
+                            width: 130.0,
+                            height: 50.0,
+                            color: Colors.red.shade600,
+                            child: TextField(
+                              decoration:  InputDecoration(
+                                hintText : "SSC/Equivalent",
+                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
+                                border:  OutlineInputBorder(
+                                  borderRadius:  BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Row(
+                            children: <Widget>[
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("Year"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(width: 20.0,),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("T.Marks"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(padding: EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text("Institute"),
+                              SizedBox(height: 3.0),
+                              TextFormField(
+                                decoration:  InputDecoration(
+                                  fillColor: Colors.white,
+                                  border:  OutlineInputBorder(
+                                    borderRadius:  BorderRadius.circular(8.0),
+                                    borderSide:  BorderSide(
+                                    ),
+                                  ),
+
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 5.0,),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Container(
+                            width: 130.0,
+                            height: 50.0,
+                            color: Colors.red.shade600,
+                            child: TextField(
+                              decoration:  InputDecoration(
+                                hintText : "FSc/Equivalent",
+                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
+                                border:  OutlineInputBorder(
+                                  borderRadius:  BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Row(
+                            children: <Widget>[
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("Year"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(width: 20.0,),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("T.Marks"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(padding: EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text("Institute"),
+                              SizedBox(height: 3.0),
+                              TextFormField(
+                                decoration:  InputDecoration(
+                                  fillColor: Colors.white,
+                                  border:  OutlineInputBorder(
+                                    borderRadius:  BorderRadius.circular(8.0),
+                                    borderSide:  BorderSide(
+                                    ),
+                                  ),
+
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 5.0,),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Container(
+                            width: 130.0,
+                            height: 50.0,
+                            color: Colors.red.shade600,
+                            child: TextField(
+                              decoration:  InputDecoration(
+                                hintText : "         NTS",
+                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
+                                border:  OutlineInputBorder(
+                                  borderRadius:  BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          child: Row(
+                            children: <Widget>[
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("Roll No"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(width: 20.0,),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("T.Marks"),
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+                                  Container(
+                                    width: 130.0,
+                                    height: 50.0,
+                                    child: TextField(
+                                      decoration:  InputDecoration(
+                                        border:  OutlineInputBorder(
+                                          borderRadius:  BorderRadius.circular(8.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(padding: EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text("Test Type"),
+                              SizedBox(height: 3.0),
+                              TextFormField(
+                                decoration:  InputDecoration(
+                                  fillColor: Colors.white,
+                                  border:  OutlineInputBorder(
+                                    borderRadius:  BorderRadius.circular(8.0),
+                                    borderSide:  BorderSide(
+                                    ),
+                                  ),
+
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                ),
-            ),
+                  ],
+                )
+            )
           ),
         ],
         controller: tabController,
