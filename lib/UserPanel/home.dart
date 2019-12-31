@@ -119,7 +119,7 @@ class _selectCategoryState extends State<selectCategory> {
                  ),
                ),
               SizedBox(
-                height: 15.0,
+                height: 16.0,
               ),
               SizedBox(
                 width: 330.0,

@@ -43,7 +43,7 @@ class _signInState extends State<signIn> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 150.0,
+                height: 160.0,
               ),
               Row(
                   children: <Widget>[
@@ -96,7 +96,7 @@ class _secondsignInState extends State<secondsignIn> {
                 child: Column(
                   children: <Widget>[
                     SizedBox(
-                      height: 6.0,
+                      height: 16.0,
                     ),
                     TextFormField(
                       decoration:  InputDecoration(
@@ -114,7 +114,7 @@ class _secondsignInState extends State<secondsignIn> {
 
                     ),
                     SizedBox(
-                      height: 6.0,
+                      height: 16.0,
                     ),
                     TextFormField(
                       decoration:  InputDecoration(
@@ -152,7 +152,7 @@ class _secondsignInState extends State<secondsignIn> {
                       ],
                     ),
                     SizedBox(
-                      height: 10.0,
+                      height: 16.0,
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 220.0),
@@ -170,7 +170,7 @@ class _secondsignInState extends State<secondsignIn> {
                       ),
                     ),
                     SizedBox(
-                      height: 20.0,
+                      height: 16.0,
                     ),
                     Row(
                       children: <Widget>[
@@ -186,7 +186,7 @@ class _secondsignInState extends State<secondsignIn> {
                       ],
                     ),
                     SizedBox(
-                      height: 10.0,
+                      height: 16.0,
                     ),
                     SizedBox(
                       width: 250.0,
@@ -203,12 +203,12 @@ class _secondsignInState extends State<secondsignIn> {
                       ),
                     ),
                     SizedBox(
-                      height: 150.0,
+                      height: 110.0,
                     ),
                     Row(
                       children: <Widget>[
                         Text(
-                          "Create account",
+                          "  Create account",
                           style: TextStyle(color: Colors.white),
                         ),
                         MaterialButton(
