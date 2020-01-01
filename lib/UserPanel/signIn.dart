@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/UserPanel/resetPassword.dart';
 import 'home.dart';
 import 'package:fyp/UserPanel/UserpanelSignUp.dart';
 
@@ -33,9 +34,7 @@ class _signInState extends State<signIn> {
                   radius: 40.0,
                   child: Image(image: AssetImage("images/kustlogo.gif")),
                 ),
-                SizedBox(
-                  height: 2.0,
-                ),
+
               ],
             ),
           ),
@@ -142,12 +141,19 @@ class _secondsignInState extends State<secondsignIn> {
                         SizedBox(
                           width: 35.0,
                         ),
-                        Text(
-                          "Forgot password",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            color: Colors.red.shade600
+                        InkWell(
+                          child: Text(
+                            "Forgot password",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              color: Colors.red.shade600
+                            ),
                           ),
+                          onTap: () {Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) => Reset()
+                              )
+                          );},
                         )
                       ],
                     ),
