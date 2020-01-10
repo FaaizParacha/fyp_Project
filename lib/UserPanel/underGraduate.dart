@@ -40,7 +40,7 @@ class _undergraduateState extends State<undergraduate> {
                           child: DropdownButton<String>(
                             iconSize: 30.0,
 
-                            hint: Text("Select Catrgory",style: TextStyle(
+                            hint: Text("Select Category",style: TextStyle(
                               color: Colors.black87
                             ),),
                             items: <String>[
