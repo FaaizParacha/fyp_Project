@@ -25,7 +25,7 @@ class _UserPanelSignInState extends State<UserPanelSignup> {
             child: null,
           ),
           Container(
-            padding: EdgeInsets.only(left: 270.0, top: 10.0),
+            padding: EdgeInsets.only(left: 290.0, top: 10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[

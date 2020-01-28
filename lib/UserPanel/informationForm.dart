@@ -211,15 +211,11 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                             width: 130.0,
                             height: 50.0,
                             color: Colors.red.shade600,
-                            child: TextField(
-                              decoration:  InputDecoration(
-                                hintText : "SSC/Equivalent",
-                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
-                                border:  OutlineInputBorder(
-                                  borderRadius:  BorderRadius.circular(8.0),
-                                ),
-                              ),
-                            ),
+                              child: Center(
+                              child: Text("SSC/Equivalent",style: TextStyle(
+                                color: Colors.white
+                              ),),
+                            )
                           ),
                         ),
                         Container(
@@ -295,18 +291,14 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                         Container(
                           padding: EdgeInsets.all(10.0),
                           child: Container(
-                            width: 130.0,
-                            height: 50.0,
-                            color: Colors.red.shade600,
-                            child: TextField(
-                              decoration:  InputDecoration(
-                                hintText : "FSc/Equivalent",
-                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
-                                border:  OutlineInputBorder(
-                                  borderRadius:  BorderRadius.circular(8.0),
-                                ),
+                              width: 130.0,
+                              height: 50.0,
+                              color: Colors.red.shade600,
+                              child: Center(
+                                child: Text("FSC/Equivalent",style: TextStyle(
+                                    color: Colors.white
+                                ),),
                               ),
-                            ),
                           ),
                         ),
                         Container(
@@ -382,18 +374,14 @@ class _InfoFormState extends State<InfoForm> with TickerProviderStateMixin {
                         Container(
                           padding: EdgeInsets.all(10.0),
                           child: Container(
-                            width: 130.0,
-                            height: 50.0,
-                            color: Colors.red.shade600,
-                            child: TextField(
-                              decoration:  InputDecoration(
-                                hintText : "         NTS",
-                                hintStyle: TextStyle(color: Colors.white,fontSize: 15.0),
-                                border:  OutlineInputBorder(
-                                  borderRadius:  BorderRadius.circular(8.0),
-                                ),
-                              ),
-                            ),
+                              width: 130.0,
+                              height: 50.0,
+                              color: Colors.red.shade600,
+                              child: Center(
+                                child: Text("NTS",style: TextStyle(
+                                    color: Colors.white
+                                ),),
+                              )
                           ),
                         ),
                         Container(
