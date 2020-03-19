@@ -13,58 +13,60 @@ class _UserPanelSignInState extends State<UserPanelSignup> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Material(
-        child: Stack(children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("images/background.png"),
-                fit: BoxFit.fill,
+      home: SafeArea(
+        child: Material(
+          child: Stack(children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("images/background.png"),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: null,
+            ),
+            Container(
+              padding: EdgeInsets.only(left: 290.0, top: 10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 40.0,
+                    child: Image(image: AssetImage("images/kustlogo.gif")),
+                  ),
+                  SizedBox(
+                    height: 2.0,
+                  ),
+                ],
               ),
             ),
-            child: null,
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 290.0, top: 10.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+            Column(
+             // mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CircleAvatar(
-                  radius: 40.0,
-                  child: Image(image: AssetImage("images/kustlogo.gif")),
-                ),
                 SizedBox(
-                  height: 2.0,
+                  height: 100.0,
                 ),
+                 Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 35.0,
+                      ),
+                      Text(
+                        "Sign up",
+                        style: TextStyle(
+                            color: Colors.red.shade600,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold),
+                      ),
+
+                    ],
+                  ),
+
+                secondSignup()
               ],
             ),
-          ),
-          Column(
-           // mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(
-                height: 120.0,
-              ),
-               Row(
-                  children: <Widget>[
-                    SizedBox(
-                      width: 35.0,
-                    ),
-                    Text(
-                      "Sign up",
-                      style: TextStyle(
-                          color: Colors.red.shade600,
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold),
-                    ),
-
-                  ],
-                ),
-
-              secondSignup()
-            ],
-          ),
-        ]),
+          ]),
+        ),
       ),
     );
   }
@@ -91,7 +93,7 @@ class _secondSignupState extends State<secondSignup> {
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                  TextFormField(
                     decoration:  InputDecoration(
@@ -109,7 +111,7 @@ class _secondSignupState extends State<secondSignup> {
                   ),
 
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 TextFormField(
                   decoration:  InputDecoration(
@@ -126,7 +128,7 @@ class _secondSignupState extends State<secondSignup> {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 TextFormField(
                   decoration:  InputDecoration(
@@ -145,7 +147,7 @@ class _secondSignupState extends State<secondSignup> {
                   obscureText: true,
                 ),
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 TextFormField(
                   decoration:  InputDecoration(
@@ -163,7 +165,7 @@ class _secondSignupState extends State<secondSignup> {
                   obscureText: true,
                 ),
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 Padding(
                   padding: EdgeInsets.only(left: 220.0),
@@ -177,7 +179,7 @@ class _secondSignupState extends State<secondSignup> {
                   ),
                 ),
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 Row(
                   children: <Widget>[
@@ -193,7 +195,7 @@ class _secondSignupState extends State<secondSignup> {
                   ],
                 ),
                 SizedBox(
-                  height: 16.0,
+                  height: 12.0,
                 ),
                 SizedBox(
                   width: 250.0,
@@ -210,7 +212,7 @@ class _secondSignupState extends State<secondSignup> {
                   ),
                 ),
                 SizedBox(
-                  height: 50.0,
+                  height: 20.0,
                 ),
                 Row(
                   children: <Widget>[

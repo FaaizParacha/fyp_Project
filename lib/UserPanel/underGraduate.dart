@@ -325,7 +325,9 @@ class _undergraduateState extends State<undergraduate> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(9.0)),
                         ),
+
                       ),
+                      SizedBox(height: 10.0,)
                     ],
                   ),
                 ],

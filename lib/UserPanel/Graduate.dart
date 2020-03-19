@@ -352,6 +352,7 @@ class _GraduateState extends State<Graduate> {
                             borderRadius: BorderRadius.circular(9.0)),
                       ),
                     ),
+                    SizedBox(height: 10.0,)
                   ],
                 ),
               ],

@@ -90,7 +90,7 @@ class _selectCategoryState extends State<selectCategory> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 200.0,
+                height: 150.0,
               ),
                Container(
                  padding: EdgeInsets.all(10.0),
@@ -119,7 +119,7 @@ class _selectCategoryState extends State<selectCategory> {
                  ),
                ),
               SizedBox(
-                height: 16.0,
+                height: 12.0,
               ),
               SizedBox(
                 width: 330.0,
@@ -139,7 +139,7 @@ class _selectCategoryState extends State<selectCategory> {
                       borderRadius: BorderRadius.circular(9.0)),
                 ),
               ),
-            Padding(padding: EdgeInsets.only(top: 130.0)),
+            Padding(padding: EdgeInsets.only(top: 70.0)),
               Image(image: AssetImage("images/design.png"))
             ],
           ),
